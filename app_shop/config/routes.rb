@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'new_file/newpage'
+
   controller :sessions do
     get 'login' => :new, :as => :login
     post 'login' => :create, :as => :authenticate
